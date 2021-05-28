@@ -7,7 +7,7 @@ spec:
   gateways:
     - kibana-gateway
   hosts:
-    - app.169.46.14.124.nip.io
+    - kibana.10.96.49.51.nip.io
   http:
     - route:
         - destination:

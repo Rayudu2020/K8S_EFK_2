@@ -8,7 +8,7 @@ spec:
     istio: ingressgateway
   servers:
     - hosts:
-        - sso.169.46.14.124.nip.io
+        - kibana.10.96.49.51.nip.io
       port:
         name: http
         number: 80
