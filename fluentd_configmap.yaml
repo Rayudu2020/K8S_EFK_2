@@ -2,8 +2,9 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: fluentd-config
+  namespace: kube-logging
   labels:
     component: fluentd
 data:
   elasticsearch_username: elastic
-  elasticsearch_password: FMTDurNc7Ojk9xNYrFYN
+  elasticsearch_password: syf1b8NXPrWst2Buw9XV
