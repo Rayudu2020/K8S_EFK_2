@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: kibana
+  namespace: kube-logging
+spec:
+  gateways:
+    - kibana-gateway
+  hosts:
+    - app.169.46.14.124.nip.io
+  http:
+    - route:
+        - destination:
+            host: kibana
+            port:
+              number: 5601
