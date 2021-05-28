@@ -28,10 +28,12 @@ metadata:
 roleRef:
   kind: ClusterRole
   name: fluentd
+  namespace: kube-logging
   apiGroup: rbac.authorization.k8s.io
 subjects:
 - kind: ServiceAccount
   name: fluentd
+  namespace: kube-logging
 ---
 apiVersion: apps/v1
 kind: DaemonSet
