@@ -34,6 +34,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: fluentd
+  namespace: kube-logging
   labels:
     component: fluentd
     kubernetes.io/cluster-service: "true"
