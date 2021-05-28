@@ -7,8 +7,8 @@ metadata:
     component: elasticsearch
 data:
   elasticsearch.yml: |
-    cluster.name: password-protected-efk
-    node.name: node-1
+    cluster.name: kind-kind
+    node.name: kind-worker2
     path.data: /usr/share/elasticsearch/data
     http:
       host: 0.0.0.0
